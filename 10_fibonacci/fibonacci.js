@@ -1,5 +1,5 @@
-const fibonacci = function() {
-
+const fibonacci = (n) => {
+  
 };
 
 // Do not edit below this line
