@@ -20,7 +20,7 @@ const caesar = (str, shift) => {
 const lowerCipher = (unicode, shift) => {
   // add the cipher shift
   if (shift > Math.abs(26)) {
-    shift = shift % 26;
+    shift %= 26;
   }
   let result = unicode + shift;
   // loop results between a and z
@@ -31,7 +31,7 @@ const lowerCipher = (unicode, shift) => {
 
 const upperCipher = (unicode, shift) => {
   if (shift > Math.abs(26)) {
-    shift = shift % 26;
+    shift %= 26;
   }
   let result = unicode + shift;
   return result < 65 ? result += 26
